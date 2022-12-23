@@ -1,15 +1,120 @@
+.list-header{
+    text-align: center;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+  }
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  td, th {
+    background-color:#ffffff; 
+    .header-table{
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      color: #000000;
+      font-weight: 700;
+      text-decoration: none;
+      font-style: italic;
+      font-variant: normal;
+      text-transform: none;
+      background-color: rgb(101, 143, 38);
+      color: #ffffff;
+    }
+    td{
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+      background-color: #ffffff;
+      font-weight: bold;
+      color: #000000;
+      .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @media (max-width: 1040px) {
+        .buttons{
+          flex-direction: column;
+          gap: 1px;
+        }
+      }
+      .ViewBtn{
+        margin-bottom: 1px;
+        box-shadow:inset 0px 1px 12px 0px #5c5f63;
+        background:linear-gradient(to bottom, #5c5f63 5%, #5c5f63 100%);
+        background-color:#5c5f63;
+        border-radius:6px;
+        border:1px solid #000408;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:12px;
+        font-weight:bold;
+        padding:2px 12px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #5c5f63;
+        }
+        .EditBtn{
+          margin-bottom: 1px;
+          box-shadow:inset 0px 1px 12px 0px #a8881d;
+          background:linear-gradient(to bottom, #a8881d 5%, #8a711e 100%);
+          background-color:#a8881d;
+          border-radius:6px;
+          border:1px solid #000408;
+          display:inline-block;
+          cursor:pointer;
+          color:#ffffff;
+          font-family:Arial;
+          font-size:12px;
+          font-weight:bold;
+          padding:2px 12px;
+          text-decoration:none;
+          text-shadow:0px 1px 0px #a8881d;
+        }
+        .DeleteBtn{
+          margin-bottom: 1px;
+          box-shadow:inset 0px 1px 12px 0px #85060d;
+          background:linear-gradient(to bottom, #85060d 5%, #85060d 100%);
+          background-color:#85060d;
+          border-radius:6px;
+          border:1px solid #000408;
+          display:inline-block;
+          cursor:pointer;
+          color:#ffffff;
+          font-family:Arial;
+          font-size:12px;
+          font-weight:bold;
+          padding:2px 12px;
+          text-decoration:none;
+          text-shadow:0px 1px 0px #85060d;
+        }
+    }
+    th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    
+    }
+    .last-column{
+      background-color: #ffffff;
+      border-top-style: none;
+      border-right-style: none;
+    }
   }
   
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
+  
+  
+  
+
+  

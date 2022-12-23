@@ -1,23 +1,18 @@
 export interface IProcess{
-    IdProcess: string;
+    dataProcess: string;
+    ProcessName: string;
     InputMaterials: string; 
     Temperature: string;
     OperationTime: string;
     OutputProduct: string; 
+    PreviousProcess: string;
 }
 
-export const dummyProcesessList: IProcess [] = [
-    {
-    IdProcess: new Date().toJSON().toString(),
-    InputMaterials: "ddsa",
-    Temperature: "saddsa",
-    OperationTime: "dsadas",
-    OutputProduct:"dsadadas"
-    },
-];
+
 
 
 export enum PageEnum{
     list,
     add,
+    edit
 }
