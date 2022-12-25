@@ -15,8 +15,15 @@
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  border: 3px solid black;
   width: 50%; /* Could be more or less, depending on screen size */
+}
+.modal-content .details-label {
+  margin-top: 0.8rem;
+  color: black;
+}
+.modal-content .details-label span {
+  font-weight: bold;
 }
 
 /* The Close Button */

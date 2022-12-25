@@ -10,11 +10,17 @@
 }
 
 input[type=button] {
-  height: 20px;
+  height: 25px;
   margin-left: 5px;
+  background-color: rgb(29, 51, 131);
+  border-radius: 6px;
+  color: white;
 }
 
 input[type=submit] {
-  height: 20px;
+  height: 25px;
   margin-left: 5px;
+  background-color: rgb(29, 51, 131);
+  border-radius: 6px;
+  color: white;
 }/*# sourceMappingURL=ProcessForm.css.map */

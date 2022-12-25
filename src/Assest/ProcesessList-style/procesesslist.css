@@ -10,13 +10,14 @@
   font-style: normal;
   font-variant: normal;
   text-transform: none;
+  margin-bottom: 1rem;
 }
 
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 table .header-table {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -29,7 +30,6 @@ table .header-table {
   font-style: italic;
   font-variant: normal;
   text-transform: none;
-  background-color: rgb(101, 143, 38);
   color: #ffffff;
 }
 table td {
@@ -39,6 +39,7 @@ table td {
   background-color: #ffffff;
   font-weight: bold;
   color: #000000;
+  border: solid 1px black;
 }
 table td .buttons {
   display: flex;
@@ -103,12 +104,16 @@ table td .DeleteBtn {
   text-shadow: 0px 1px 0px #85060d;
 }
 table th {
-  border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+  border: solid 1px black;
+}
+table .columns {
+  background-color: rgb(29, 51, 131) !important;
 }
 table .last-column {
-  background-color: #ffffff;
-  border-top-style: none;
-  border-right-style: none;
+  background-color: #94b8e9;
+  border-top: solid 0px transparent;
+  border-right: solid 0px transparent;
+  opacity: 1;
 }/*# sourceMappingURL=procesesslist.css.map */
