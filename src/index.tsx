@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './App'
 import './Assest/style-index/index.css';
-import reportWebVitals from './reportWebVitals';
-import App from './App';
 
 
 const root = ReactDOM.createRoot(
@@ -15,5 +14,3 @@ root.render(
     {/* </AuthProvider> */}
   </React.StrictMode>
 );
-
-reportWebVitals();

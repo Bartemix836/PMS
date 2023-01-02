@@ -114,6 +114,7 @@ table .columns {
 table .last-column {
   background-color: #94b8e9;
   border-top: solid 0px transparent;
+  border-bottom: solid 0px transparent;
   border-right: solid 0px transparent;
   opacity: 1;
 }/*# sourceMappingURL=procesesslist.css.map */
