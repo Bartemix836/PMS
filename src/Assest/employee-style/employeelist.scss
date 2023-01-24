@@ -1,0 +1,46 @@
+.App {
+    text-align: center;
+    .employee-section{
+        align-items: center;
+        h1{
+            padding-bottom: 5px;
+            font-family: "Overpass Mono", monospace;
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(255, 255, 255);
+            text-shadow: rgb(0 0 0) 2px 2px 2px;
+        }
+        padding: 1rem;
+        table{
+            width: auto;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            
+            // display: flex;
+            th{
+                background-color: rgb(29, 51, 131)!important;
+                color: white;
+                font-family: 'Lato', sans-serif;
+                text-align: center
+            }
+            td{
+               text-align: center;  
+            }
+        }
+    }   
+  }
+  
+  nav
+  {
+    ul{
+    list-style: none;
+    li{
+        display: inline-block;
+        padding: 10px;
+        }
+    }
+  } 
+  

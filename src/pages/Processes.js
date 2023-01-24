@@ -34,11 +34,11 @@ export default function Processes() {
   };
   return (
     <div className="container mt-3">
-      <article className="article-header">
+      {/* <article className="article-header">
             <header>
                 <h1> Process Flow Management</h1>
             </header>
-        </article>
+        </article> */}
       
       <div className="mt-4">
         <select className="form-select" value={process} onChange={handleOnChange}>
