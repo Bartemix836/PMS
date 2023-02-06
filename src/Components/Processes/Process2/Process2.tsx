@@ -1,24 +1,23 @@
 import { useEffect, useState } from 'react';
-import { IProcess, PageEnum } from '../Components/Processes/Procesess.type';
-import ProcesessList1 from '../Components/Processes/ProcesessList';
-import '../Assest/home-style/home.css';
-import AddProcess from './Processes/AddProcess';
-import EditProcess from './Processes/EditProcess';
+import { IProcess, PageEnum } from './Procesess.type2';
+import ProcesessList2 from './ProcesessList2';
+import AddProcess2 from './AddProcess2';
+import EditProcess2 from './EditProcess2';
 
-const Home = ()=>{
+const SecondProcess = ()=>{
  const [ProcesessList, setProcesessList] = useState([] as IProcess[]);
  const [shownPage, setShownPage] = useState(PageEnum.list)
  const [datatoEdit, setDatatoEdit] = useState({} as IProcess);
   
  //saved data after refreshing 
  useEffect(()=>{
-   const listInString = window.localStorage.getItem("ProcessList")
+   const listInString = window.localStorage.getItem("ProcessList2")
     if(listInString){
         setProcesessList(JSON.parse(listInString));
     }
  },[]);
 
- const onAddProcessClickHnd = () =>{
+ const onAddProcess2ClickHnd = () =>{
     setShownPage(PageEnum.add)
  };
 const showListPage = () =>{
@@ -27,11 +26,11 @@ const showListPage = () =>{
  
 const _setProcessList = (list:IProcess[]) =>{
     setProcesessList(list);
-    window.localStorage.setItem("ProcessList",JSON.stringify(list));
+    window.localStorage.setItem("ProcessList2",JSON.stringify(list));
 }
 
 
-const addProcess = (data:IProcess) =>{
+const addProcess2 = (data:IProcess) =>{
     _setProcessList([...ProcesessList,data]);
 }
 const deleteProcess = (data:IProcess)=>{
@@ -42,40 +41,34 @@ const deleteProcess = (data:IProcess)=>{
     tempList.splice(indexToDelete,1);
     _setProcessList(tempList)  // update list 
 };
-const editProcessData =(data: IProcess)=>{
+const editProcess2Data =(data: IProcess)=>{
     setShownPage(PageEnum.edit);
     setDatatoEdit(data)
 }
 
 const updateData =(data:IProcess) =>{
-    const filteredData = ProcesessList.filter(x=> x.dataProcess=== data.dataProcess)[0];
+    const filteredData = ProcesessList.filter(x=> x.dataProcess2=== data.dataProcess2)[0];
     const indexofRecord = ProcesessList.indexOf(filteredData);
     const tempData = [...ProcesessList]
     tempData[indexofRecord] = data;
     _setProcessList(tempData)
 }
  return (
-    <>
-        <article className="article-header">
-            <header>
-                <h1> Production System Management</h1>
-            </header>
-        </article>
-        
+    <>     
         <section className='section-content'>
             {shownPage === PageEnum.list &&(
                 <>
-                <input className="add-btn" type="button" value="Add Process" onClick={onAddProcessClickHnd}/>
-                <ProcesessList1 list={ProcesessList} onDeleteClickHnd={deleteProcess} onEdit={editProcessData}/>
+                <input className="add-btn" type="button" value="Add Process" onClick={onAddProcess2ClickHnd}/>
+                <ProcesessList2 list={ProcesessList} onDeleteClickHnd={deleteProcess} onEdit={editProcess2Data}/>
                 </>
             )}
 
-            {shownPage === PageEnum.add && <AddProcess onBackBtnClickHnd={showListPage} onSubmitClickHnd={addProcess} />} 
+            {shownPage === PageEnum.add && <AddProcess2 onBackBtnClickHnd={showListPage} onSubmitClickHnd={addProcess2} />} 
 
-            {shownPage === PageEnum.edit && <EditProcess data={datatoEdit} onBackBtnClickHnd ={showListPage} onUpdateBtnClickHnd={updateData}/> }
+            {shownPage === PageEnum.edit && <EditProcess2 data={datatoEdit} onBackBtnClickHnd ={showListPage} onUpdateBtnClickHnd={updateData}/> }
         </section>
     </>
   );   
 }
 
-export default Home;
+export default SecondProcess;

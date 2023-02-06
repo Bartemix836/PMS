@@ -1,4 +1,4 @@
-import  {Routes,Route, Link} from 'react-router-dom';
+import  {Routes,Route} from 'react-router-dom';
 import '../../Assest/employee-style/employeelist.css';
 // import CreateUser from './components/CreateUser';
 import ListUser from './components/ListUser';
@@ -12,7 +12,7 @@ function App() {
           <nav>
               <ul>
                 <li>
-                  <Link to="/employees">List Users</Link>
+                  {/* <Link to="/employees">List Users</Link> */}
                 </li>
               </ul>      
             </nav>

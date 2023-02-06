@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import FirstProcess from "../Components/Process1/Process1";
-import SecondProcess from "../Components/Process2/Process2";
+import FirstProcess from "../Components/Processes/Process1/Process1";
+import SecondProcess from "../Components/Processes/Process2/Process2";
 import '../Assest/style-index/index.css';
 // import Description from "./Components/Description";
 

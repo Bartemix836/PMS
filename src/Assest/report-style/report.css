@@ -1,0 +1,30 @@
+.reports {
+  text-align: center;
+  margin-top: -22rem;
+}
+.reports h1 {
+  font-family: "Overpass Mono", monospace;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+  padding-bottom: 1rem;
+}
+.reports .report-tab {
+  width: auto;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.4rem;
+}
+.reports .report-tab th {
+  background-color: rgb(29, 51, 131) !important;
+  color: white;
+  font-size: 1.5rem !important;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+.reports .report-tab td {
+  text-align: center;
+}/*# sourceMappingURL=report.css.map */
