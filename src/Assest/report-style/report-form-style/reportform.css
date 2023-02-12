@@ -1,0 +1,71 @@
+.form-container-report {
+  color: black;
+  font-weight: bold !important;
+  font-size: 1rem;
+}
+.form-container-report h3 {
+  font-size: 1.5rem !important;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.form-container-report div {
+  margin-top: 6px;
+}
+.form-container-report div label {
+  font-size: 1rem !important;
+  margin-right: 1px;
+  margin-top: 4px;
+  text-align: left;
+}
+.form-container-report div input[type=text] {
+  height: 20px;
+  padding-left: 15px;
+  margin: 5px;
+  justify-content: end !important;
+}
+.form-container-report div input[type=number] {
+  height: 20px;
+  padding-left: 15px;
+  margin: 5px;
+  justify-content: end;
+}
+.form-container-report .note {
+  display: flex !important;
+  flex-direction: row !important;
+}
+.form-container-report .note .note-label {
+  margin-bottom: 1rem !important;
+}
+.form-container-report .note .note-btn {
+  height: 20px;
+  padding-left: 15px;
+  margin: 5px;
+}
+
+.buttons {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+.buttons input[type=button] {
+  height: 25px;
+  margin-left: 5px;
+  background-color: rgb(29, 51, 131);
+  font-weight: bold;
+  border-radius: 6px;
+  padding-left: 1px;
+  padding-right: 1px;
+  color: white;
+}
+.buttons input[type=submit] {
+  height: 25px;
+  margin-left: 5px;
+  background-color: rgb(29, 51, 131);
+  font-weight: bold;
+  padding-left: 1px;
+  padding-right: 1px;
+  border-radius: 6px;
+  color: white;
+}/*# sourceMappingURL=reportform.css.map */

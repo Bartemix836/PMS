@@ -1,11 +1,11 @@
-import React from 'react'
-import ReportApp from '../Components/Reports/ReportApp'
+
+import MainReport from '../Components/Reports/mainReport';
 import '../Assest/report-style/report.css';
 
 function Reports() {
   return (
     <div className='reports'>
-        <ReportApp/>
+        <MainReport/>
     </div>
   )
 }

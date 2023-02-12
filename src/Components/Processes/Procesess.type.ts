@@ -8,9 +8,6 @@ export interface IProcess{
     PreviousProcess: string;
 }
 
-
-
-
 export enum PageEnum{
     list,
     add,

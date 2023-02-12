@@ -18,11 +18,16 @@
   border: 3px solid black;
   width: 50%; /* Could be more or less, depending on screen size */
 }
+.modal-content h3 {
+  font-size: 1.5rem;
+}
 .modal-content .details-label {
   margin-top: 0.8rem;
   color: black;
+  font-size: 1rem;
 }
 .modal-content .details-label span {
+  font-size: 1rem;
   font-weight: bold;
 }
 

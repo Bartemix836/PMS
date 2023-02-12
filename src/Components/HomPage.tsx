@@ -62,7 +62,7 @@ const updateData =(data:IProcess) =>{
             </header>
         </article>
         
-        <section className='section-content'>
+        <section className='section-content-report'>
             {shownPage === PageEnum.list &&(
                 <>
                 <input className="add-btn" type="button" value="Add Process" onClick={onAddProcessClickHnd}/>

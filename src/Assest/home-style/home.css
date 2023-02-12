@@ -25,4 +25,26 @@
   padding: 0px 17px;
   height: 2rem;
   text-decoration: none;
+}
+
+.section-content-report {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: -33%;
+}
+.section-content-report .add-report-btn {
+  float: right !important;
+  margin-bottom: 5px;
+  background-color: rgb(29, 51, 131);
+  border-radius: 6px;
+  border: 1px solid #000408;
+  display: flex;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0px 17px;
+  height: 2rem;
+  text-decoration: none;
 }/*# sourceMappingURL=home.css.map */
