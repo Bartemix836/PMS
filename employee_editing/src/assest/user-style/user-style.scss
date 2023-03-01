@@ -1,0 +1,144 @@
+
+div{
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        font-family: arial, sans-serif;
+        justify-content: center;
+        border-collapse: collapse;
+        width: auto;
+        background-color:transparent; 
+        .header-table{
+          font-family: "Trebuchet MS", Helvetica, sans-serif;
+          text-align: center;
+          font-size: 16px;
+          letter-spacing: 2px;
+          word-spacing: 2px;
+          font-weight: 700;
+          text-decoration: none;
+          font-style: italic;
+          font-variant: normal;
+          text-transform: none;
+          color: #ffffff;    
+        }
+        td{
+          border: 1px solid #dddddd;
+          width: auto;
+          text-align: left;
+          padding: 8px;
+          gap: 2px;
+          background-color: #ffffff;
+          font-weight: bold;
+          color: #000000;
+          border: solid 1px black;
+          .buttons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          @media (max-width: 1040px) {
+            .buttons{
+              flex-direction: column;
+              gap: 1px;
+            }
+          }
+          .btn-save{
+            margin-bottom: 1px;
+            box-shadow:inset 0px 1px 12px 0px #5c5f63;
+            background:linear-gradient(to bottom, #5c5f63 5%, #5c5f63 100%);
+            background-color:#5c5f63;
+            border-radius:6px;
+            border:1px solid #000408;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:15px;
+            font-weight:bold;
+            padding:2px 12px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #5c5f63;
+          }
+          .ViewBtn{
+            margin-bottom: 1px;
+            box-shadow:inset 0px 1px 12px 0px #5c5f63;
+            background:linear-gradient(to bottom, #5c5f63 5%, #5c5f63 100%);
+            background-color:#5c5f63;
+            border-radius:6px;
+            border:1px solid #000408;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:12px;
+            font-weight:bold;
+            padding:2px 12px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #5c5f63;
+            }
+            .EditBtn{
+              text-align: center;
+              margin-bottom: 1px;
+              box-shadow:inset 0px 1px 12px 0px #a8881d;
+              background:linear-gradient(to bottom, #a8881d 5%, #8a711e 100%);
+              background-color:#a8881d;
+              border-radius:6px;
+              border:1px solid #000408;
+              display:inline-block;
+              cursor:pointer;
+              color:#ffffff;
+              font-family:Arial;
+              font-size:12px;
+              font-weight:bold;
+              padding: 2px 12px;
+              margin-right: 10px;
+              text-decoration:none;
+              text-shadow:0px 1px 0px #a8881d;
+              a{
+                text-decoration: none;
+                color:#ffffff;
+              }
+              a:active{
+                text-decoration: none;
+                color:#ffffff;
+              }
+            }
+            .DeleteBtn{
+              margin-bottom: 1px;
+              box-shadow:inset 0px 1px 12px 0px #85060d;
+              background:linear-gradient(to bottom, #85060d 5%, #85060d 100%);
+              background-color:#85060d;
+              border-radius:6px;
+              border:1px solid #000408;
+              display:inline-block;
+              cursor:pointer;
+              color:#ffffff;
+              font-family:Arial;
+              font-size:12px;
+              font-weight:bold;
+              padding:2px 12px;
+              text-decoration:none;
+              text-shadow:0px 1px 0px #85060d;
+            }
+        }
+        th {
+        text-align: left;
+        padding: 8px;
+        border: solid 1px black;
+        color: #ffffff;
+        }
+        .columns{
+          background-color: rgb(29 51 131)!important;
+        }
+        .last-column{
+          background-color: #94b8e9;
+          border-top:solid 0px transparent;
+          border-bottom: solid 0px transparent;
+          border-right:solid 0px transparent;
+          opacity: 1;
+        }
+      }
+}
