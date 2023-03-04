@@ -1,5 +1,5 @@
-IN PROGRESS 
-It is a project all the time in progress. It is a site for the management of a manufacturing enterprise, which allows you to suspect information from different areas of the business. It allows adding reports and technological processes. Management also has the ability to add employees through another page located in the backend/api branch. The employee sections are based on information sent from the API, which is based on databases created in MySQL. Below are screenshots of each section.
+IN PROGRESS:
+It is a project all the time in progress. It is a site for the management of a manufacturing enterprise, which allows you to suspect information from different areas of the business. It allows adding reports and technological processes. Management also has the ability to add employees through another page located in the backend/api branch. The employee sections are based on information sent from the API, which is based on databases created in MYSQL. Below are screenshots of each section.
 
 ORDERS
 ![image](https://user-images.githubusercontent.com/114190309/222274183-eb251f30-3d0f-4a4e-93dc-567edc7977f0.png)
